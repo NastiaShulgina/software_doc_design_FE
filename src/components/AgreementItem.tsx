@@ -20,7 +20,7 @@ interface IProps {
   >;
 }
 
-const AgreementItem = ({ item, navigation }: IProps) => {
+const AgreementItem = ({ item }: IProps) => {
   const pickUpDate = new Date(item.agreements[0].issueingDate)
     .toISOString()
     .slice(0, 10);
