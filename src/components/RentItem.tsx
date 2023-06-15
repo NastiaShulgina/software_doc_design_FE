@@ -29,7 +29,7 @@ const RentItem = ({ item, navigation }: IProps) => {
         <Text style={styles.title}>{`${item.brand} ${item.type}`}</Text>
         <Text
           style={styles.cost}
-        >{`${item.rentalCost.hryvnias} hryvnias | day`}</Text>
+        >{`${item.rentalCost.hryvnias} UAH per day`}</Text>
       </View>
       <Image
         source={{
