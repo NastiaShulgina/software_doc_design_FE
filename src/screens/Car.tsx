@@ -74,7 +74,7 @@ const Car = ({
         <Text style={styles.title}>{`${item.brand} ${item.type}`}</Text>
         <Text
           style={styles.cost}
-        >{`${rentalCostInHryvnias} hryvnias | day`}</Text>
+        >{`${rentalCostInHryvnias} UAH per day`}</Text>
         <View style={styles.dateContainer}>
           <View style={styles.dateWrapper}>
             <Text style={styles.dateHeader}>Pick-up Date</Text>
