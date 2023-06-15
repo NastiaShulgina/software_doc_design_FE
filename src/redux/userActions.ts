@@ -24,7 +24,7 @@ export const setCars = (cars: ICar) => ({
   data: cars,
 });
 
-export const setAgreements = (agreements, agreementCars) => ({
+export const setAgreements = (agreements: any, agreementCars: any[]) => ({
   type: SET_AGREEMENTS,
   data: { agreements, agreementCars },
 });
@@ -64,7 +64,7 @@ export const getAgreeements = () => {
     try {
       const response = await API.getAgreeements();
 
-      const agreementCars = response.data.map(async (x) => {
+      const agreementCars = response.data.map(async (x: { carId: number; }) => {
         const result = await API.getCarById(x.carId);
 
         return result.data;
